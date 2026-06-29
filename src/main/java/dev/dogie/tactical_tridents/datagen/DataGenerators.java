@@ -56,5 +56,7 @@ public class DataGenerators {
                 CompletableFuture.completedFuture(TagsProvider.TagLookup.empty()),
                 existingFileHelper
         ));
+
+        generator.addProvider(event.includeServer(), new TTRecipeProvider(packOutput, lookupProvider));
     }
 }
