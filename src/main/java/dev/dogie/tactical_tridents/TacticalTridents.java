@@ -90,7 +90,7 @@ public class TacticalTridents {
                         EquipmentSlotGroup.MAINHAND
                 )
                 .add(Attributes.ATTACK_SPEED, new AttributeModifier(
-                        ResourceLocation.fromNamespaceAndPath("tactical_tridents", "base_attack_speed"),
+                        ResourceLocation.fromNamespaceAndPath(TacticalTridents.MODID, "base_attack_speed"),
                         -2.9,
                         AttributeModifier.Operation.ADD_VALUE
                 ), EquipmentSlotGroup.MAINHAND)
