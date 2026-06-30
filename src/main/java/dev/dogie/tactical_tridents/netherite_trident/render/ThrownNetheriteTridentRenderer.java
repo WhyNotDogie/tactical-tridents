@@ -3,8 +3,8 @@ package dev.dogie.tactical_tridents.netherite_trident.render;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
+import dev.dogie.tactical_tridents.client.TTModelLayers;
 import dev.dogie.tactical_tridents.netherite_trident.ThrownNetheriteTrident;
-import net.minecraft.client.model.TridentModel;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderer;
@@ -16,11 +16,11 @@ import net.minecraft.util.Mth;
 
 public class ThrownNetheriteTridentRenderer extends EntityRenderer<ThrownNetheriteTrident> {
     public static final ResourceLocation TEXTURE = ResourceLocation.fromNamespaceAndPath("tactical_tridents", "textures/entity/netherite_trident.png");
-    private final TridentModel model;
+    private final NetheriteTridentModel model;
 
     public ThrownNetheriteTridentRenderer(EntityRendererProvider.Context context) {
         super(context);
-        this.model = new TridentModel(context.bakeLayer(ModelLayers.TRIDENT));
+        this.model = new NetheriteTridentModel(context.bakeLayer(TTModelLayers.NETHERITE_TRIDENT));
     }
 
     @Override

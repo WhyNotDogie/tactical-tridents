@@ -1,7 +1,8 @@
-package dev.dogie.tactical_tridents;
+package dev.dogie.tactical_tridents.client;
 
 import dev.dogie.tactical_tridents.TacticalTridents;
 import dev.dogie.tactical_tridents.netherite_trident.render.NetheriteTridentBewlr;
+import dev.dogie.tactical_tridents.netherite_trident.render.NetheriteTridentModel;
 import dev.dogie.tactical_tridents.netherite_trident.render.ThrownNetheriteTridentRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.neoforged.api.distmarker.Dist;
@@ -26,5 +27,10 @@ public class TTClientEvents {
     @SubscribeEvent
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(TacticalTridents.THROWN_NETHERITE_TRIDENT.get(), ThrownNetheriteTridentRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(TTModelLayers.NETHERITE_TRIDENT, NetheriteTridentModel::createBodyLayer);
     }
 }
