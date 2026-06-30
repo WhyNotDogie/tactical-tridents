@@ -1,0 +1,20 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/fishing"
+    },
+    {
+      "chance": 0.03,
+      "condition": "minecraft:random_chance"
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biomes": "minecraft:desert"
+      }
+    }
+  ],
+  "table": "tactical_tridents:inject/hydroscopic"
+}

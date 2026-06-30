@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/bastion_treasure"
+    },
+    {
+      "chance": 0.33,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "table": "tactical_tridents:inject/incandescent"
+}
