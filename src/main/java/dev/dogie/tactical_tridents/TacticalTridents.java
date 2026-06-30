@@ -5,6 +5,7 @@ import dev.dogie.tactical_tridents.netherite_trident.NetheriteTridentItem;
 import dev.dogie.tactical_tridents.netherite_trident.ThrownNetheriteTrident;
 import dev.dogie.tactical_tridents.netherite_trident.render.NetheriteTridentBewlr;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -48,6 +49,7 @@ public class TacticalTridents {
             () -> new NetheriteTridentItem(new Item.Properties()
                     .durability(500)
                     .fireResistant()
+                    .component(DataComponents.TOOL, TridentItem.createToolProperties())
                     .attributes(createTridentAttributes())
             )
     );

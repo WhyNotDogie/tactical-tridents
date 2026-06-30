@@ -19,17 +19,23 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TridentItem;
+import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class NetheriteTridentItem extends TridentItem {
 
     public NetheriteTridentItem(Item.Properties properties) {
         super(properties);
+    }
+
+    public static Tool createToolProperties() {
+        return new Tool(List.of(), 1.0F, 2);
     }
 
     @Override
