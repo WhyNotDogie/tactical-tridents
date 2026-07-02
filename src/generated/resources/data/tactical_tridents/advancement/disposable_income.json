@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:nether/obtain_ancient_debris",
+  "criteria": {
+    "has_netherite_trident": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tactical_tridents:netherite_trident"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Upgrade a Trident with a Netherite Ingot.",
+    "icon": {
+      "count": 1,
+      "id": "tactical_tridents:netherite_trident"
+    },
+    "title": "Disposable Income"
+  },
+  "requirements": [
+    [
+      "has_netherite_trident"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
