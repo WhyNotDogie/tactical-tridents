@@ -58,5 +58,7 @@ public class DataGenerators {
         ));
 
         generator.addProvider(event.includeServer(), new TTRecipeProvider(packOutput, lookupProvider));
+
+        generator.addProvider(event.includeServer(), new TTAdvancementProvider(packOutput, lookupProvider, existingFileHelper));
     }
 }
