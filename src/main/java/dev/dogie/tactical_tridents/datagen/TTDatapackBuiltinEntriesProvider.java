@@ -50,7 +50,7 @@ public class TTDatapackBuiltinEntriesProvider extends DatapackBuiltinEntriesProv
 
             TagKey<Item> incandescentSupported = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("tactical_tridents", "enchantable/incandescent"));
 
-            register(context, TTEnchantments.FAKE_IMPALING_FUCKYOUEFFECTS, Enchantment.enchantment(
+            register(context, TTEnchantments.FAKE_IMPALING, Enchantment.enchantment(
                             Enchantment.definition(
                                     itemLookup.getOrThrow(ItemTags.TRIDENT_ENCHANTABLE),
                                     2,

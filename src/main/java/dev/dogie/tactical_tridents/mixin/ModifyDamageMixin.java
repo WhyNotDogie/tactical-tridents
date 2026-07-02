@@ -44,7 +44,7 @@ public class ModifyDamageMixin {
         }
 
         ItemStack evilAssFakeTrident = stack.copy();
-        Holder<Enchantment> fakeImpalingHolder = enchantmentRegistry.getHolderOrThrow(TTEnchantments.FAKE_IMPALING_FUCKYOUEFFECTS);
+        Holder<Enchantment> fakeImpalingHolder = enchantmentRegistry.getHolderOrThrow(TTEnchantments.FAKE_IMPALING);
         EnchantmentHelper.updateEnchantments(evilAssFakeTrident, mutableEnchants -> {
             mutableEnchants.set(impalingHolder, 0);
             mutableEnchants.set(fakeImpalingHolder, impalingLevel);

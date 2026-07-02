@@ -6,9 +6,9 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.enchantment.Enchantment;
 
 public class TTEnchantments {
-    public static final ResourceKey<Enchantment> FAKE_IMPALING_FUCKYOUEFFECTS = ResourceKey.create(
+    public static final ResourceKey<Enchantment> FAKE_IMPALING = ResourceKey.create(
             Registries.ENCHANTMENT,
-            ResourceLocation.fromNamespaceAndPath("tactical_tridents", "fake_impaling_fuckyoueffects")
+            ResourceLocation.fromNamespaceAndPath("tactical_tridents", "fake_impaling")
     );
 
     public static final ResourceKey<Enchantment> HYDROSCOPIC = ResourceKey.create(
