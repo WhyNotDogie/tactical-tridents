@@ -1,18 +1,19 @@
 {
-    "required": true,
-    "minVersion": "0.8",
-    "package": "dev.dogie.tactical_tridents.mixin",
-    "compatibilityLevel": "JAVA_21",
-    "mixins": [
-        "ModifyDamageMixin",
-        "TridentUseMixin"
-    ],
-    "client": [
-    ],
-    "injectors": {
-        "defaultRequire": 1
-    },
-    "overwrites": {
-        "requireAnnotations": true
-    }
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.dogie.tactical_tridents.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ModifyDamageMixin",
+    "TridentUseMixin"
+  ],
+  "client": [
+    "ItemRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
 }
